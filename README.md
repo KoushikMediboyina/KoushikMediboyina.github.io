@@ -1,50 +1,45 @@
-# Sai Koushik — portfolio
+# Sai Koushik — Portfolio
 
-A single-page portfolio in plain HTML, CSS and JavaScript. No build step, no dependencies, so it deploys straight to GitHub Pages.
+**Live at [koushikmediboyina.github.io](https://koushikmediboyina.github.io)**
 
-## Files
+Backend developer in Hyderabad. I build the parts of software nobody sees — the APIs, the data model, the access rules, the real-time updates — and make sure they hold up.
+
+Currently a software developer at Leap India, working on the backend of a construction project management platform: REST APIs in Node.js and Express, a PostgreSQL schema, role-based access control, and a WebSocket layer that keeps every site and office in sync. Graduating 2026 with a B.Tech in CSE from SRM University AP, and looking for a backend role.
+
+This repository is the source for that site.
+
+## Built with
+
+Plain HTML, CSS and JavaScript. No framework, no build step, no dependencies — the repository is what ships, served straight from GitHub Pages as static files.
+
+The whole site is about 170 KB including the portrait and resume PDF, so it loads in one round trip on a slow connection.
+
+A few things I cared about while building it:
+
+- **Cyanotype blueprint theme** — a portrait that develops its colour on hover, a timeline drawn as you scroll, and project cards that tilt like sheets on a drafting table.
+- **Motion is optional** — every animation is gated behind `prefers-reduced-motion`, in both the stylesheet and the JavaScript.
+- **Works without JavaScript** — content is in the markup; JS only adds the interactions.
+- **Responsive** at 900px and 640px breakpoints, down to phone width.
+
+## Structure
 
 ```
-index.html                  the page
-css/style.css               all styles (tokens at the top)
-js/main.js                  interactions (portrait, nav, timeline, sheets, copy button)
-assets/photo.jpg            portrait
-assets/Sai_Koushik_Resume.pdf
-assets/favicon.svg
-.nojekyll                   tells GitHub Pages to serve files as-is
+index.html        all page content, one section per comment block
+css/style.css     styles — design tokens are declared at the top
+js/main.js        interactions: portrait, nav, timeline, project sheets
+assets/           portrait, resume PDF, favicon
 ```
 
-## Run it locally
+## Running it locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `index.html` directly in a browser, or serve the folder:
 
-```
+```bash
 npx serve .
 ```
 
-## Put it live on GitHub Pages
+## Contact
 
-1. On GitHub, create a new **public** repository named exactly `KoushikMediboyina.github.io`. Leave it empty (no README, no .gitignore).
-2. In this folder:
-
-   ```
-   git add .
-   git commit -m "Portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/KoushikMediboyina/KoushikMediboyina.github.io.git
-   git push -u origin main
-   ```
-
-3. On GitHub, open the repository → **Settings** → **Pages**. Under *Build and deployment*, set **Source** to *Deploy from a branch*, pick `main` and `/ (root)`, and save.
-4. After about a minute the site is live at **https://koushikmediboyina.github.io**.
-
-Every later `git push` to `main` updates the live site.
-
-If you'd rather use a different repository name (say `portfolio`), the same steps work; the site is then served at `https://koushikmediboyina.github.io/portfolio/`. All paths in the site are relative, so nothing needs to change.
-
-## Updating content
-
-- Text lives in `index.html`; each section is marked with a comment.
-- To add a link to a project's code, drop an `<a class="sheet-link">` into that project's `.sheet-block` (there's a comment showing where).
-- Replace `assets/Sai_Koushik_Resume.pdf` with a newer PDF whenever the resume changes; keep the filename and the download link keeps working.
-- Colours and fonts are CSS custom properties at the top of `css/style.css`.
+- **Email** — [saikoushik2k4@gmail.com](mailto:saikoushik2k4@gmail.com)
+- **LinkedIn** — [saikoushikmediboyina](https://www.linkedin.com/in/saikoushikmediboyina)
+- **Resume** — [PDF](assets/Sai_Koushik_Resume.pdf)
