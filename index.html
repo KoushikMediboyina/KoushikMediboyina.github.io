@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sai Koushik — Backend developer</title>
+  <meta name="description" content="Portfolio of Mediboyina Sai Koushik, a backend developer in Hyderabad working with Node.js, PostgreSQL and real-time systems.">
+  <meta name="theme-color" content="#0F2E52">
+  <meta property="og:title" content="Sai Koushik — Backend developer">
+  <meta property="og:description" content="I build the parts of software nobody sees: APIs, data models, access control and real-time updates.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-tone="blue">
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav-name" href="#top">Sai Koushik</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-resume" href="assets/Sai_Koushik_Resume.pdf" download="Sai_Koushik_Resume.pdf">Resume</a>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero: cyanotype print -->
+    <section class="hero tex blue" data-tone="blue" aria-labelledby="hero-name">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-name" class="hero-name">
+            <span class="line"><span class="word">Mediboyina</span></span>
+            <span class="line"><span class="word">Sai Koushik</span></span>
+          </h1>
+          <p class="hero-lede">Backend developer in Hyderabad. I build the parts of software nobody sees — the APIs, the data model, the access rules, the real-time updates — and make sure they hold up.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="mailto:saikoushik2k4@gmail.com">Email me</a>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <div class="print-frame">
+            <button class="print" type="button" aria-pressed="false" aria-label="Develop the print to show the photo in colour">
+              <img class="print-cyan" src="assets/photo.jpg" width="1268" height="1476" alt="Sai Koushik smiling, wearing a grey shirt, against a plain wall.">
+              <img class="print-color" src="assets/photo.jpg" width="1268" height="1476" alt="" aria-hidden="true">
+            </button>
+          </div>
+          <figcaption>Cyanotype print. Move over it to develop the colour, or click to develop it fully.</figcaption>
+        </figure>
+      </div>
+
+      <div class="titleblock-wrap">
+        <dl class="titleblock">
+          <div><dt>Location</dt><dd>Hyderabad, India</dd></div>
+          <div><dt>Currently</dt><dd>Software developer, Leap India</dd></div>
+          <div><dt>Graduating</dt><dd>2026, B.Tech CSE, SRM University AP</dd></div>
+          <div><dt>Scale</dt><dd>Not to scale</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- About + skills -->
+    <section id="about" class="section tex paper" data-tone="paper">
+      <div class="wrap two-col">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>I'm a final-year Computer Science student at SRM University AP and a software developer at Leap India, where I work on the backend of a construction project management platform: the APIs, the PostgreSQL schema, the access rules, and the WebSocket layer that keeps every site and office in sync.</p>
+          <p>The problems I like most are structural. How should the data be modelled so it stays fast as a project grows? Who is allowed to approve what? How does a change made on one screen reach everyone else right away? I write Java, Python and JavaScript, and I'm most at home in Node.js with a relational database underneath.</p>
+          <p>I graduate in 2026 and I'm looking for a backend role where I can keep building things that hold up under load.</p>
+        </div>
+
+        <div class="schedule">
+          <h3>What I work with</h3>
+          <table>
+            <tbody>
+              <tr><th scope="row">Languages</th><td>Java, Python, JavaScript, C++</td></tr>
+              <tr><th scope="row">Backend</th><td>Node.js, Express.js, REST APIs, WebSockets, authentication and role-based access control</td></tr>
+              <tr><th scope="row">Frontend</th><td>React.js, HTML5, CSS3</td></tr>
+              <tr><th scope="row">Databases</th><td>PostgreSQL, MySQL, MongoDB, Firebase</td></tr>
+              <tr><th scope="row">Foundations</th><td>Data structures, algorithms, object-oriented design</td></tr>
+              <tr><th scope="row">Tools</th><td>Git, GitHub, Postman, VS Code</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section tex paper paper-2" data-tone="paper">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li class="job current">
+            <div class="job-when">Jun 2025 – <span class="now">Present</span></div>
+            <div class="job-body">
+              <h3>Software developer, Leap India</h3>
+              <p class="job-sub">Backend of a construction project management platform. Node.js, Express.js, PostgreSQL.</p>
+              <ul>
+                <li>Built backend modules for the platform with Node.js, Express.js and PostgreSQL, exposed as REST APIs.</li>
+                <li>Added role-based access control and authentication so each user only sees and changes what their role allows.</li>
+                <li>Built real-time collaboration with WebSockets: task changes and approvals show up for everyone instantly.</li>
+                <li>Tuned task-management workflows and query performance for large projects with many users.</li>
+                <li>Debug, integrate APIs, test and ship features alongside the team on Git.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job-when">Jun 2024 – Aug 2024</div>
+            <div class="job-body">
+              <h3>Front-end development intern, EduNet Foundation</h3>
+              <p class="job-sub">Responsive interfaces in React.js.</p>
+              <ul>
+                <li>Built responsive user interfaces with React.js and modern JavaScript.</li>
+                <li>Wired frontend components to backend APIs for live data.</li>
+                <li>Debugging, UI polish and feature enhancements in a small team using Git and GitHub.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Projects: drawing sheets on the table -->
+    <section id="projects" class="section tex blue" data-tone="blue">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-lede">Three things I've built end to end. Each one taught me something about structure.</p>
+        <div class="sheets">
+          <article class="sheet">
+            <header class="sheet-head">
+              <h3>Distributed Task Manager</h3>
+            </header>
+            <p class="sheet-desc">A full-stack task manager for teams: tasks, users and project workflows behind a REST API.</p>
+            <ul class="sheet-notes">
+              <li>REST APIs for tasks, users and project workflows.</li>
+              <li>Sign-in with authentication and role-based access control.</li>
+              <li>Backend logic tuned for fast retrieval and task updates.</li>
+            </ul>
+            <footer class="sheet-block">
+              <dl><dt>Built with</dt><dd>React, Node.js, Express, MongoDB</dd></dl>
+              <div class="sheet-no">Sheet 01</div>
+            </footer>
+            <!-- Add a repo link inside .sheet-block when ready: <a class="sheet-link" href="https://github.com/KoushikMediboyina/...">View code</a> -->
+          </article>
+
+          <article class="sheet">
+            <header class="sheet-head">
+              <h3>ATM Management System</h3>
+            </header>
+            <p class="sheet-desc">A banking transaction system that simulates an ATM: sign-in, withdrawals, deposits and balance enquiries.</p>
+            <ul class="sheet-notes">
+              <li>Object-oriented modules for accounts and transaction processing.</li>
+              <li>MySQL stores accounts and every transaction.</li>
+              <li>Input validation and exception handling keep transactions safe.</li>
+            </ul>
+            <footer class="sheet-block">
+              <dl><dt>Built with</dt><dd>Java, MySQL</dd></dl>
+              <div class="sheet-no">Sheet 02</div>
+            </footer>
+          </article>
+
+          <article class="sheet">
+            <header class="sheet-head">
+              <h3>Smart Expense Analyzer</h3>
+            </header>
+            <p class="sheet-desc">A model that reads spending history, finds the patterns and predicts what next month will cost.</p>
+            <ul class="sheet-notes">
+              <li>Data preprocessing and feature engineering on transaction data.</li>
+              <li>Model training and evaluation for expense prediction.</li>
+              <li>Charts of spending trends to support financial decisions.</li>
+            </ul>
+            <footer class="sheet-block">
+              <dl><dt>Built with</dt><dd>Python, scikit-learn, pandas</dd></dl>
+              <div class="sheet-no">Sheet 03</div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education + certifications -->
+    <section id="education" class="section tex paper" data-tone="paper">
+      <div class="wrap two-col">
+        <div>
+          <h2>Education</h2>
+          <p class="edu-degree">B.Tech, Computer Science and Engineering</p>
+          <p class="edu-meta">SRM University AP, 2022 – 2026</p>
+          <p class="edu-meta">CGPA 7.14 / 10</p>
+        </div>
+        <div>
+          <h2>Certifications</h2>
+          <ul class="certs">
+            <li><span>Front-End Development</span><span class="cert-by">IBM SkillsBuild</span></li>
+            <li><span>AWS Cloud Fundamentals</span><span class="cert-by">Coursera</span></li>
+            <li><span>Foundations of Cybersecurity</span><span class="cert-by">Coursera</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section tex blue blue-deep" data-tone="blue">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="section-lede">I graduate in 2026 and I'm looking for backend roles. If you're hiring, have a project in mind, or just want to compare notes on Node and Postgres, write to me.</p>
+        <div class="contact-row">
+          <a class="email-big" href="mailto:saikoushik2k4@gmail.com">saikoushik2k4@gmail.com</a>
+          <button class="copy" type="button" data-copy="saikoushik2k4@gmail.com">Copy email</button>
+        </div>
+        <ul class="links">
+          <li><a href="https://github.com/KoushikMediboyina" rel="me">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/saikoushikmediboyina" rel="me">LinkedIn</a></li>
+          <li><a href="assets/Sai_Koushik_Resume.pdf" download="Sai_Koushik_Resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" data-tone="blue">
+    <p>© 2026 Mediboyina Sai Koushik. Plain HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
